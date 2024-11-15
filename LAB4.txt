@@ -1,0 +1,68 @@
+rows = 5
+for i in range(1, rows + 1):
+    print((str(i) + ' ') * i)
+
+for i in range(1, 6):
+    print(' ' * (i - 1) + (str(i) + ' ') * (6 - i))
+
+for i in range(1, 6):
+    print(' ' * (5 - i) + ' '.join(map(str, range(1, i + 1))))
+
+for i in range(5, 0, -1):
+    print(' ' * (5 - i) + (str(i) + ' ') * i)
+
+for i in range(5, 0, -1):
+    print(' ' * (5 - i) + (str(5) + ' ') * i)
+
+for i in range(1, 6):
+    print(' ' * (5 - i) + ' '.join(map(str, range(i, 0, -1))))
+
+for i in range(6, 0, -1):
+    print(' '.join(map(str, range(i))))
+
+count = 1
+for i in range(1, 10, 2):
+    print(' '.join(map(str, range(count, count + i))))
+    count += i
+
+count = 1
+for i in range(1, 5):
+    row = list(range(count, count + i))[::-1]
+    print(' '.join(map(str, row)))
+    count += i
+
+for i in range(1, 6):
+    row = list(range(1, i + 1)) + list(range(i - 1, 0, -1))
+    print(' '.join(map(str, row)))
+
+for i in range(5, 0, -1):
+    left = list(range(5, i - 1, -1))
+    right = list(range(i, 6))
+    print(' '.join(map(str, left + right)))
+
+for i in range(1, 6):
+    row = [str(10 - j * 2) for j in range(i)]
+    print(' '.join(row))
+
+for i in range(7):
+    row = [str(i * j) for j in range(i + 1)]
+    print(' '.join(row))
+
+for i in range(1, 10, 2):
+    print((str(i) + ' ') * (i // 2 + 1))
+
+for i in range(1, 6):
+    print(' ' * (5 - i) + ' '.join(map(str, range(1, i + 1))))
+
+for i in range(1, 8):
+    print(' ' * (7 - i) + '* ' * i)
+
+for i in range(6, 0, -1):
+    print(' ' * (6 - i) + '* ' * i)
+
+for i in range(1, 6):
+    print('* ' * i)
+
+
+
+
